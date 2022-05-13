@@ -1,0 +1,8 @@
+"0",""
+"0","age <- read_xlsx(""median_age_by_sex.xlsx"", col_names = T)"
+"0",""
+"0","income <- read_xlsx(""median_household_income.xlsx"", col_names = T)"
+"0",""
+"0","race <- read_xlsx(""race_over18_years.xlsx"", col_names = T)"
+"0",""
+"0",""

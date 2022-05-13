@@ -1,0 +1,141 @@
+"0","pacotes <- c(""tidyverse"",""sf"",""tmap"",""rgdal"",""rgeos"",""adehabitatHR"",""knitr"","
+"0","             ""kableExtra"", ""tidyr"", ""ggplot2"", ""readxl"", ""maptools"", ""broom"","
+"0","             ""kableExtra"", ""dplyr"")"
+"0",""
+"0","if(sum(as.numeric(!pacotes %in% installed.packages())) != 0){"
+"0","  instalador <- pacotes[!pacotes %in% installed.packages()]"
+"0","  for(i in 1:length(instalador)) {"
+"0","    install.packages(instalador, dependencies = T)"
+"0","    break()}"
+"0","  sapply(pacotes, require, character = T) "
+"0","} else {"
+"0","  sapply(pacotes, require, character = T) "
+"0","}"
+"2","Carregando pacotes exigidos: sf
+"
+"2","Linking to GEOS 3.9.1, GDAL 3.2.1, PROJ 7.2.1; sf_use_s2() is TRUE
+"
+"2","Carregando pacotes exigidos: rgeos
+"
+"2","rgeos version: 0.5-9, (SVN revision 684)
+ GEOS runtime version: 3.9.1-CAPI-1.14.2 
+ Please note that rgeos will be retired by the end of 2023,
+plan transition to sf functions using GEOS at your earliest convenience.
+ GEOS using OverlayNG
+ Linking to sp version: 1.4-6 
+ Polygon checking: TRUE 
+
+"
+"2","Carregando pacotes exigidos: adehabitatHR
+"
+"2","Carregando pacotes exigidos: deldir
+"
+"2","deldir 1.0-6      Nickname: ""Mendacious Cosmonaut""
+"
+"2","
+     The syntax of deldir() has had an important change. 
+     The arguments have been re-ordered (the first three 
+     are now ""x, y, z"") and some arguments have been 
+     eliminated.  The handling of the z (""tags"") 
+     argument has been improved.
+ 
+     The ""dummy points"" facility has been removed. 
+     This facility was a historical artefact, was really 
+     of no use to anyone, and had hung around much too 
+     long.  Since there are no longer any ""dummy points"", 
+     the structure of the value returned by deldir() has 
+     changed slightly.  The arguments of plot.deldir() 
+     have been adjusted accordingly; e.g. the character 
+     string ""wpoints"" (""which points"") has been 
+     replaced by the logical scalar ""showpoints"". 
+     The user should consult the help files.
+
+"
+"2","Carregando pacotes exigidos: ade4
+"
+"2","Carregando pacotes exigidos: adehabitatMA
+"
+"2","Registered S3 methods overwritten by 'adehabitatMA':
+  method                       from
+  print.SpatialPixelsDataFrame sp  
+  print.SpatialPixels          sp  
+"
+"2","Carregando pacotes exigidos: adehabitatLT
+"
+"2","Carregando pacotes exigidos: CircStats
+"
+"2","Carregando pacotes exigidos: MASS
+"
+"2","
+Attaching package: ‘MASS’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    select
+
+"
+"2","Carregando pacotes exigidos: boot
+"
+"2","
+Attaching package: ‘adehabitatLT’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    id
+
+"
+"2","Carregando pacotes exigidos: knitr
+"
+"2","Carregando pacotes exigidos: kableExtra
+"
+"2","
+Attaching package: ‘kableExtra’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    group_rows
+
+"
+"2","Carregando pacotes exigidos: broom
+"
+"1","   tidyverse "
+"1","          sf "
+"1","        tmap "
+"1","       rgdal "
+"1","       rgeos "
+"1","adehabitatHR "
+"1","       knitr "
+"1","  kableExtra "
+"1","       tidyr "
+"1","
+"
+"1","        TRUE "
+"1","        TRUE "
+"1","        TRUE "
+"1","        TRUE "
+"1","        TRUE "
+"1","        TRUE "
+"1","        TRUE "
+"1","        TRUE "
+"1","        TRUE "
+"1","
+"
+"1","     ggplot2 "
+"1","      readxl "
+"1","    maptools "
+"1","       broom "
+"1","  kableExtra "
+"1","       dplyr "
+"1","
+"
+"1","        TRUE "
+"1","        TRUE "
+"1","        TRUE "
+"1","        TRUE "
+"1","        TRUE "
+"1","        TRUE "
+"1","
+"
